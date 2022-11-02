@@ -1,18 +1,11 @@
 package com.cydeo.repository;
 
-import com.cydeo.dto.RoleDTO;
 import com.cydeo.entity.Role;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
 
-
-@Repository
 public interface RoleRepository extends JpaRepository<Role, Long> {
 
+    // give the role based on the description
 
-    // give me the role based on the description
-
-    Role findByDescription(String description);
-
-
+    Role findAllByDescription(String description);
 }

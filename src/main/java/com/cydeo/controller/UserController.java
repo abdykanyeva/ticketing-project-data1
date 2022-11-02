@@ -32,7 +32,7 @@ public class UserController {
         return "/user/create";
 
     }
-//
+
 //    @PostMapping("/create")
 //    public String insertUser(@Valid @ModelAttribute("user") UserDTO user, BindingResult bindingResult, Model model) {
 //
