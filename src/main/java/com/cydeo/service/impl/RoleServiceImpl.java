@@ -34,7 +34,9 @@ public class RoleServiceImpl implements RoleService {
         // I need to use ModelMapper
         // I already created a class called RoleMapper and there are methods for me that will make this conversion
 
-        return roleList.stream().map(roleMapper::convertToDto).collect(Collectors.toList());
+        return roleList.stream()
+                .map(roleMapper::convertToDto)
+                .collect(Collectors.toList());
     }
 
     @Override
