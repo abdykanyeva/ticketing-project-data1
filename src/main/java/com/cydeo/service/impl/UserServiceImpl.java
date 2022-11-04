@@ -32,8 +32,6 @@ public class UserServiceImpl implements UserService {
 
         return userList.stream().map(userMapper::convertToDto).collect(Collectors.toList());
 
-
-
     }
 
     @Override
@@ -43,6 +41,8 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public void save(UserDTO user) {
+
+        userRepository.save(userMapper.convertToEntity(user));
 
     }
 
