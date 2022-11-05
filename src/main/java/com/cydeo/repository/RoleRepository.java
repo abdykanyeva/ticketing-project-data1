@@ -10,4 +10,6 @@ public interface RoleRepository extends JpaRepository<Role, Long> {
     // give the role based on the description
 
     Role findAllByDescription(String description);
+
+
 }
